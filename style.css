@@ -148,9 +148,10 @@
 }
 body {
   width: 100vw;
-  height: 100%;
   margin-left: 0;
   margin-top: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
 nav {
   font-family: "Montserrat";
@@ -183,39 +184,38 @@ img {
   display: flex;
   flex-direction: row;
 }
-nav a {
+a {
   text-decoration: none;
   color: #ffffff;
 }
 .menu-list-item {
   padding-left: 5vw;
 }
-button {
-  height: 50px;
+#navbutton {
+  margin-left: 15vw;
+  padding-bottom: 2vh;
+}
+.button {
   border: 1px solid rgba(255, 255, 255, 0.295743);
   box-sizing: border-box;
   border-radius: 8px;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 500;
   font-size: 14px;
   line-height: 17px;
   /* identical to box height */
   background-color: transparent;
   text-align: center;
   text-transform: uppercase;
-}
-#navbutton {
-  margin-left: 15vw;
-}
-.button-blue {
-  background: #122798;
-  border-radius: 8px;
-  color: white;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   padding-right: 8px;
   padding-left: 8px;
   width: 12vw;
+  color: white;
+}
+.button-blue {
+  background: #122798;
 }
 
 .bg-orange {
@@ -306,6 +306,7 @@ button {
   padding-top: 10vh;
   padding-bottom: 10vh;
   padding-left: 10vw;
+  margin-right: 0;
 }
 .categories {
   padding-top: 2vh;
@@ -356,13 +357,23 @@ button {
 #submit .rulebook-caption {
   font-weight: normal;
 }
+#submit a {
+  font-weight: 500;
+}
+.submit-deadline {
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1vh;
+}
 .submit-deadline-title {
   color: #333333;
+  height: 4vh;
   font-weight: 600;
   font-size: 25px;
   line-height: 64px;
   /* identical to box height, or 256% */
   letter-spacing: -2px;
+  padding-bottom: 0;
 }
 .contact-content-title {
   font-style: normal;
@@ -525,9 +536,16 @@ footer a:hover {
 
   .nav-menu.active {
     left: 0;
+    padding-bottom: 4vh;
   }
   nav {
     width: 100%;
+  }
+  #navbutton {
+    width: 30vw;
+    margin-left: 5%;
+    display: block;
+    margin-top: 1vh;
   }
   .logo-image img {
     width: 40vw;
@@ -536,6 +554,7 @@ footer a:hover {
   }
   .menu-list {
     flex-direction: column;
+    height: max-content;
   }
   .menu-list-container {
     margin-left: 0;
@@ -543,6 +562,9 @@ footer a:hover {
   }
   .menu-list-container button {
     margin-left: 0;
+  }
+  .nav-item {
+    padding-top: 5px;
   }
   .flex-row {
     display: block;
@@ -556,12 +578,11 @@ footer a:hover {
   img {
     width: 80vw;
   }
-  button {
-    width: 25vw;
+  .button {
+    margin-top: 1vh;
   }
   .button-blue {
     width: 50vw;
-    font-size: 3vw;
   }
   .div-container {
     padding-left: 0;
@@ -608,9 +629,8 @@ footer a:hover {
     text-align: center;
     letter-spacing: 0;
   }
-  #home button {
+  #home .button {
     margin-top: 3vh;
-    font-size: 3vw;
   }
   .home-image {
     margin-left: 0;
@@ -681,6 +701,11 @@ footer a:hover {
     margin-left: 12.5vw;
     margin-right: 12.5vw;
     text-align: center;
+  }
+  #rulebook .button-blue {
+		width: 50vw;
+		padding-left: 15vw;
+		padding-right: 15vw;
   }
   #contact .title {
     margin-left: 0;
