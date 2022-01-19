@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Canvas for change</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-image">
+          <!--logo-->
+          <img src="assets/logo.png" />
+        </div>
+        <div class="menu-list-container sub-container">
+          <!--menu-->
+          <ul class="menu-list nav-menu">
+            <li class="menu-list-item nav-item"><a href="#home">Home</a></li>
+            <li class="menu-list-item nav-item"><a href="#about">About</a></li>
+            <li class="menu-list-item nav-item"><a href="#themes">Themes</a></li>
+            <li class="menu-list-item nav-item"><a href="#rulebook">Rulebook</a></li>
+            <li class="menu-list-item nav-item"><a href="#submit">Submit</a></li>
+            <button class="nav-item" id="navbutton"><a href="#contact">Contact Us</a></button>
+          </ul>
+					<div class="hamburger">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</div>
+        </div>
+      </nav>
+    </header>
+    <div class="bg-orange div-container flex-row-reverse" id="home">
+      <div class="home-image">
+        <img src="assets/home_updated.png" />
+      </div>
+      <!--canvas for change let the colors flow-->
+      <div class="home-text">
+        <p class="title">Canvas For Change</p>
+        <p class="home-caption">Let the Colors Flow</p>
+        <button class="button-blue">Learn More</button>
+      </div>
+    </div>
+    <div class="bg-light div-container" id="about">
+      <!--about-->
+      <p class="title">About</p>
+      <div class="flex-row-reverse">
+        <div class="about-image">
+          <!--image-->
+          <img src="assets/home.png" />
+        </div>
+        <div class="about-text">
+          <p class="about-content">
+            Canvas for Change is an online poster-making event for all the young
+            art aficionados out there who are eager for a stage to display their
+            talents. Along with providing a platform for school students to
+            bring out their creative sides, this event also aims to improve
+            social consciousness about various relevant issues in an innovative
+            manner.
+          </p>
+          <p class="about-content">
+            Participation is open to all students from LKG to Grade 10 and
+            exciting prizes await the winners of each cluster. So ready your
+            paint brushes, set up your easels and get ready to pour your artsy
+            souls out onto your canvases! The portal for submission of entries
+            will be open from the 18th to the 26th of January, 2022.
+          </p>
+        </div>
+      </div>
+      <div class="about-deadline">
+        <p class="about-deadline-title">Deadline</p>
+        <p>26th January 2022</p>
+        <p>Before 11:59 p.m</p>
+      </div>
+    </div>
+    <div class="bg-orange div-container" id="themes">
+      <!--themes-->
+      <p class="title">Themes</p>
+      <div class="flex-row">
+        <div class="theme-image">
+          <!--image-->
+          <img src="assets/theme_mod.png" />
+        </div>
+        <div class="categories">
+          <div class="category-item">
+            <p>&lt;Category&gt;</p>
+            <div class="category-name">
+              <p>Caterpillars</p>
+              <span>(LKG to 2nd Grade)</span>
+            </div>
+            <p class="category-topic">Pollution Control</p>
+          </div>
+          <div class="category-item">
+            <p>&lt;Category&gt;</p>
+            <div class="category-name">
+              <p>Cocoons</p>
+              <span>(3rd to 6th Grade)</span>
+            </div>
+            <p class="category-topic">Food Wastage</p>
+          </div>
+          <div class="category-item">
+            <p>&lt;Category&gt;</p>
+            <div class="category-name">
+              <p>Butterflies</p>
+              <span>(7th to 10th Grade)</span>
+            </div>
+            <p class="category-topic">Mental Health</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-light div-container" id="rulebook">
+      <div class="flex-row">
+        <!--rulebook-->
+        <!--image-->
+        <div class="rulebook-image">
+          <img src="assets/submit.png" />
+        </div>
+        <div class="rulebook-container">
+          <div>
+            <p class="title">Rulebook</p>
+            <p class="rulebook-caption">
+              Check the rulebook before submitting your entries
+            </p>
+            <button class="button-blue">Rulebook</button>
+          </div>
+          <!--submission-->
+          <div id="submit">
+            <p class="title">Submission</p>
+            <p class="rulebook-caption">
+              Submit your artwork by clicking the button below
+            </p>
+            <button class="button-blue">Submit</button>
+          </div>
+        </div>
+      </div>
+      <div class="submit-deadline">
+        <p class="submit-deadline-title">Deadline</p>
+        <p>26th January 2022</p>
+        <p>Before 11:59 p.m</p>
+      </div>
+    </div>
+    <div class="bg-orange div-container" id="contact">
+      <!--contact-->
+      <p class="title">Contact</p>
+      <div class="flex-row-reverse">
+        <div class="contact-image">
+          <!--image-->
+          <img src="assets/contact_mod.png" />
+        </div>
+        <div class="contact-content">
+          <p class="contact-content-title">For any queries please contact</p>
+          <div class="flex-row">
+            <p class="contact-name">
+              Praveen<span class="contact-colon">:</span>
+            </p>
+            <p class="contact-number">+91 88701 83719</p>
+          </div>
+          <div class="flex-row">
+            <p class="contact-name">
+              Miruthula<span class="contact-colon">:</span>
+            </p>
+            <p class="contact-number">+91 73389 33959</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <!--made with-->
+      <div className="footer-content">
+        Made with
+        <span className="heart">❤️</span>
+        by
+        <a href="http://delta.nitt.edu" target="_blank"
+          ><span className="org-name">Delta Force</span></a
+        >
+        and
+        <a href="http://graphique.club" target="_blank"
+          ><span className="org-name">Graphique</span></a
+        >
+      </div>
+    </footer>
+  </body>
+	<script src='script.js'></script>
+</html>
