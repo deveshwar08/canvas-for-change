@@ -161,6 +161,7 @@ nav {
   padding-top: 15px;
   /* position: fixed; */
   width: 100%;
+  height: 10vh;
 }
 img {
   width: 40vw;
@@ -236,6 +237,10 @@ a {
 
   letter-spacing: -2px;
   padding-bottom: 2vh;
+
+  padding-left: 10vw;
+  padding-top: 10vh;
+  margin: 0;
 }
 .home-caption {
   font-weight: 500;
@@ -246,21 +251,30 @@ a {
 }
 #home {
   padding-top: 150px;
+  height: 90vh;
 }
 #home button {
-  margin-top: 3vh;
+  margin-top: 5vh;
 }
 .home-text {
   padding-top: 10vh;
   width: 25vw;
+  padding-left: 5vw;
 }
 .home-text .title {
   font-size: 75px;
   font-weight: bold;
   line-height: 80px;
+  padding-left: 0;
+  padding-top: 5vh;
+}
+.home-caption {
+  padding-top: 7vh;
 }
 .home-image {
-  margin-left: 25vw;
+  margin-top: 15vh;
+  margin-left: 15vw;
+  margin-right: 15vw;
 }
 .flex-row {
   display: flex;
@@ -272,6 +286,10 @@ a {
   flex-direction: row-reverse;
   flex-wrap: wrap;
 }
+.about-text {
+  margin-left: 5vw;
+  width: 50vw;
+}
 .about-content {
   font-size: 20px;
   line-height: 32px;
@@ -282,17 +300,23 @@ a {
   margin-left: 0;
 }
 .about-image {
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding-left: 0;
+  padding-right: 20vw;
+  margin: 0;
+  width: 25vw;
 }
 .about-deadline {
   border: 1px solid #333333;
   box-sizing: border-box;
   border-radius: 8px;
   width: 15vw;
-  margin-left: 28vw;
+  margin-left: 35vw;
   padding-bottom: 3vh;
   text-align: center;
+
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 1vh;
 }
 .about-deadline-title {
   font-weight: 600;
@@ -303,10 +327,13 @@ a {
   letter-spacing: -2px;
 }
 .div-container {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  padding-left: 10vw;
+  padding: 0;
   margin-right: 0;
+  height: 100vh;
+  width: 100vw;
+}
+.theme-image {
+  padding-left: 5vw;
 }
 .categories {
   padding-top: 2vh;
@@ -338,17 +365,25 @@ a {
 .rulebook-container {
   margin-left: 5vw;
 }
+.rulebook-container .title {
+  padding-left: 0;
+}
 .rulebook-caption {
   font-size: 25px;
   line-height: 32px;
   /* identical to box height, or 128% */
-
-  text-align: justify;
   padding-bottom: 3vh;
+}
+.rulebook-image {
+  padding-left: 5vw;
+  padding-top: 10vh;
+}
+#rulebook .button {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 #submit {
   font-style: normal;
-  margin-top: 7vh;
   font-weight: 600;
   font-size: 20px;
   line-height: 32px;
@@ -364,6 +399,7 @@ a {
   font-weight: normal;
   font-size: 20px;
   line-height: 1vh;
+  margin-left: 10vw;
 }
 .submit-deadline-title {
   color: #333333;
@@ -633,22 +669,32 @@ footer a:hover {
     margin-top: 3vh;
   }
   .home-image {
-    margin-left: 0;
+    margin-left: 12vw;
+    margin-top: 5vh;
   }
-  .about-content {
-    font-size: 14px;
-    line-height: 21px;
+  #about .title {
+    padding-top: 0;
   }
   .about-deadline {
+    margin-top: 0;
     width: 50vw;
     margin-left: 25vw;
     margin-right: 25vw;
     padding-bottom: 1vh;
+    font-size: 1.5vh;
+    line-height: 2vh;
+  }
+  .about-deadline p {
+    margin: 0;
+  }
+  .about-deadline-title {
+    font-size: 2vh;
+    letter-spacing: 0;
+    margin: 0;
   }
   .about-content {
     font-size: 3.5vw;
-    line-height: 21px;
-    /* or 160% */
+    line-height: 18px;
     width: 80vw;
     padding-top: 4vh;
     text-align: justify;
@@ -657,8 +703,9 @@ footer a:hover {
     text-align: center;
   }
   .about-image {
-    margin-left: 0;
-    padding-left: 0;
+    margin: 0;
+    margin-left: 12vw;
+    padding: 0;
   }
   .theme-image {
     margin-left: 0;
@@ -687,12 +734,15 @@ footer a:hover {
     flex-direction: column;
     align-items: stretch;
   }
+  #rulebook .title {
+    padding: 0;
+  }
   .rulebook-container {
     margin-left: 0;
   }
   .rulebook-image {
-    padding-left: 0;
-    margin-left: 0;
+		margin: 0;
+    padding: 0;
   }
   .rulebook-caption {
     font-size: 5vw;
@@ -703,10 +753,28 @@ footer a:hover {
     text-align: center;
   }
   #rulebook .button-blue {
-		width: 50vw;
-		padding-left: 15vw;
-		padding-right: 15vw;
+    width: 50vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
   }
+  .submit-deadline {
+    margin-top: 0;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-right: 25vw;
+    padding-bottom: 1vh;
+    font-size: 2vh;
+    line-height: 2vh;
+  }
+  .submit-deadline-title {
+    font-size: 3vh;
+    letter-spacing: 0;
+    margin: 0;
+		margin-top: 1vh;
+  }
+	#submit .title {
+		margin-top: 2vh;;
+	}
   #contact .title {
     margin-left: 0;
     padding-left: 0;
