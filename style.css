@@ -202,7 +202,7 @@ a {
   border-radius: 8px;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.73vw;
   line-height: 17px;
   /* identical to box height */
   background-color: transparent;
@@ -231,7 +231,7 @@ a {
 }
 .title {
   font-weight: bold;
-  font-size: 50px;
+  font-size: 2.6vw;
   line-height: 64px;
   /* identical to box height, or 128% */
 
@@ -244,7 +244,7 @@ a {
 }
 .home-caption {
   font-weight: 500;
-  font-size: 35px;
+  font-size: 1.8vw;
   line-height: 32px;
   /* or 91% */
   margin-top: 3vh;
@@ -262,7 +262,7 @@ a {
   padding-left: 5vw;
 }
 .home-text .title {
-  font-size: 75px;
+  font-size: 3.9vw;
   font-weight: bold;
   line-height: 80px;
   padding-left: 0;
@@ -291,7 +291,7 @@ a {
   width: 50vw;
 }
 .about-content {
-  font-size: 20px;
+  font-size: 1vw;
   line-height: 32px;
   /* or 160% */
   width: 30vw;
@@ -315,12 +315,12 @@ a {
   text-align: center;
 
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1vw;
   line-height: 1vh;
 }
 .about-deadline-title {
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.3vw;
   line-height: 64px;
   /* identical to box height, or 256% */
 
@@ -345,7 +345,7 @@ a {
   font-family: Kufam;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 1.3vw;
   line-height: 2vh;
   margin-bottom: 3vh;
   padding-top: 0.5vh;
@@ -369,7 +369,7 @@ a {
   padding-left: 0;
 }
 .rulebook-caption {
-  font-size: 25px;
+  font-size: 1.3vw;
   line-height: 32px;
   /* identical to box height, or 128% */
   padding-bottom: 3vh;
@@ -385,7 +385,7 @@ a {
 #submit {
   font-style: normal;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1vw;
   line-height: 32px;
   color: #000000;
 }
@@ -397,7 +397,7 @@ a {
 }
 .submit-deadline {
   font-weight: normal;
-  font-size: 20px;
+  font-size: 1vw;
   line-height: 1vh;
   margin-left: 10vw;
 }
@@ -405,7 +405,7 @@ a {
   color: #333333;
   height: 4vh;
   font-weight: 600;
-  font-size: 25px;
+  font-size: 1.3vw;
   line-height: 64px;
   /* identical to box height, or 256% */
   letter-spacing: -2px;
@@ -414,7 +414,7 @@ a {
 .contact-content-title {
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 1.5vw;
   line-height: 32px;
   /* identical to box height, or 107% */
 
@@ -423,7 +423,7 @@ a {
 .contact-name {
   font-style: normal;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 1.5vw;
   line-height: 32px;
   /* or 107% */
 
@@ -433,7 +433,7 @@ a {
 .contact-number {
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 1.5vw;
   line-height: 32px;
   /* or 107% */
 
@@ -531,7 +531,7 @@ footer a:hover {
   transition: all 0.3s ease;
   background-color: white;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
   body {
     display: block;
     text-align: center;
@@ -543,7 +543,7 @@ footer a:hover {
   }
   .hamburger {
     display: block;
-    margin-left: 40vw;
+    margin-left: 50vw;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -577,14 +577,9 @@ footer a:hover {
   nav {
     width: 100%;
   }
-  #navbutton {
-    width: 30vw;
-    margin-left: 5%;
-    display: block;
-    margin-top: 1vh;
-  }
   .logo-image img {
-    width: 40vw;
+    width: 30vw;
+    height: auto;
     margin-left: 4vw;
     top: 32px;
   }
@@ -612,10 +607,12 @@ footer a:hover {
     display: none;
   }
   img {
-    width: 80vw;
+    height: 30vh;
+    width: auto;
   }
   .button {
     margin-top: 1vh;
+    font-size: 4vw;
   }
   .button-blue {
     width: 50vw;
@@ -634,6 +631,13 @@ footer a:hover {
     padding-left: 0;
   }
 
+  #navbutton {
+    width: 40vw;
+    margin-left: 0;
+    margin-top: 28vh;
+    display: block;
+    margin-top: 5vh;
+  }
   .home-caption {
     font-weight: 500;
     font-size: 8vw;
@@ -703,20 +707,28 @@ footer a:hover {
     text-align: center;
   }
   .about-image {
-    margin: 0;
-    margin-left: 12vw;
+    margin-left: 15vw;
+    width: 70vw;
     padding: 0;
+  }
+  .about-image img {
+    width: 100%;
+    height: auto;
   }
   .theme-image {
     margin-left: 0;
     padding-left: 0;
     padding-right: 0;
   }
+  #themes .title {
+    padding-top: 1vh;
+  }
   .categories {
     width: 70vw;
     margin-left: 15vw;
     margin-right: 15vw;
     padding: 0;
+    height: 50vh;
   }
   .category-item {
     width: 50vw;
@@ -741,7 +753,7 @@ footer a:hover {
     margin-left: 0;
   }
   .rulebook-image {
-		margin: 0;
+    margin: 0;
     padding: 0;
   }
   .rulebook-caption {
@@ -770,11 +782,11 @@ footer a:hover {
     font-size: 3vh;
     letter-spacing: 0;
     margin: 0;
-		margin-top: 1vh;
+    margin-top: 1vh;
   }
-	#submit .title {
-		margin-top: 2vh;;
-	}
+  #submit .title {
+    margin-top: 2vh;
+  }
   #contact .title {
     margin-left: 0;
     padding-left: 0;
