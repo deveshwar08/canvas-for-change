@@ -765,8 +765,11 @@ footer a:hover {
     margin: 0;
     padding: 0;
   }
+  .rulebook-image img {
+    height: 20vh;
+  }
   .rulebook-caption {
-    font-size: 5vw;
+    font-size: 2vh;
     font-weight: normal;
     width: 75vw;
     margin-left: 12.5vw;
@@ -777,6 +780,8 @@ footer a:hover {
     width: 50vw;
     padding-left: 15vw;
     padding-right: 15vw;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
   }
   .submit-deadline {
     margin-top: 0;
